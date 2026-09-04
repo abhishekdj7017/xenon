@@ -4,7 +4,7 @@ export default async function handler(req, res) {
   }
 
   const PIXEL_ID = "1366618005528841";
-  const ACCESS_TOKEN = EAANbFLf6MnsBSdT4tGml10xZC8qijKYX3ZBb3U16dmcXuW99fV5pZAGfhiXGzB1pAVxpoKbAmp6SYm637tjvlNtR4jkui3ngLzYwa7gg3ZBPqDZAZCFHZC9q3r1GDFZCrgbvnIWn0oS0GAzVDOL0Mnb0aoX3ceEZCNEn1gx4HdBiaQW1J52WoB9OZCUrwUPHrNcAI0LwZDZD;
+  const ACCESS_TOKEN = EAANbFLf6MnsBScCaRgn1Umg5TOiVtEF3UfEkQwpF6BI9t0QhPIoZBIadzo2mz7hUFsr6mOUZC573izZAItENjfNOIFyWSHFObbCekbxHO0c7weBhPDVK2epZBeVe3K8Jv9d1cJmxAnD2srg1qSr6yTIC9UFbLyYYC12C7Xm6xPJiOJcN3XZB1y81JELYkZCGJeaQZDZD;
 
   try {
     const response = await fetch(
