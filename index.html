@@ -1,0 +1,541 @@
+
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />  <title>𝗫𝗘𝗡𝗢𝗡 𝗫 𝗧𝗢𝗢𝗟</title>  <meta name="description" content="Kabir Community - Join our Telegram community." />
+  <meta name="theme-color" content="#090b1f" />  <!-- Google Fonts -->  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;0,9..144,800;1,9..144,600&display=swap" rel="stylesheet">  <!-- Font Awesome -->  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>  <!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1366618005528841');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1366618005528841&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->  <style>
+
+    :root{
+      --bg-0:#07091a;
+      --bg-1:#101536;
+      --blue:#38bdf8;
+      --purple:#8b5cf6;
+      --violet:#a855f7;
+      --cyan:#22d3ee;
+      --pink:#ec4899;
+      --ink-muted:#9ca9d8;
+      --line:rgba(139,92,246,0.20);
+    }
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    @media (prefers-reduced-motion: reduce){
+      *{
+        animation-duration:0.001ms !important;
+        animation-iteration-count:1 !important;
+        transition-duration:0.001ms !important;
+      }
+    }
+
+    html,body{
+      height:100%;
+    }
+
+    body{
+      font-family:'Sora',sans-serif;
+      background:var(--bg-0);
+      color:#fff;
+      overflow-x:hidden;
+      position:relative;
+    }
+
+    /* Animated ambient background */
+    #field{
+      position:fixed;
+      inset:0;
+      z-index:0;
+      pointer-events:none;
+      overflow:hidden;
+      background:
+        radial-gradient(circle at 20% 10%,rgba(56,189,248,.13),transparent 32%),
+        radial-gradient(circle at 85% 80%,rgba(168,85,247,.16),transparent 35%);
+    }
+
+    #field::before{
+      content:"";
+      position:absolute;
+      top:-25%;
+      left:50%;
+      width:850px;
+      height:850px;
+      transform:translateX(-50%);
+      background:radial-gradient(circle,rgba(139,92,246,0.24) 0%,rgba(139,92,246,0) 65%);
+      filter:blur(15px);
+    }
+
+    #field::after{
+      content:"";
+      position:absolute;
+      bottom:-30%;
+      right:-15%;
+      width:700px;
+      height:700px;
+      background:radial-gradient(circle,rgba(34,211,238,0.18) 0%,rgba(34,211,238,0) 65%);
+    }
+
+    .glow{
+      position:absolute;
+      bottom:5%;
+      left:-15%;
+      width:600px;
+      height:600px;
+      background:radial-gradient(circle,rgba(236,72,153,0.12) 0%,rgba(236,72,153,0) 65%);
+    }
+
+    .grain{
+      position:fixed;
+      inset:0;
+      z-index:1;
+      pointer-events:none;
+      opacity:0.035;
+      background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    }
+
+    .main{
+      position:relative;
+      z-index:5;
+      min-height:100vh;
+      display:flex;
+      align-items:flex-start;
+      justify-content:center;
+      padding:9vh 20px 30px;
+    }
+
+    .card{
+      width:100%;
+      max-width:400px;
+      background:linear-gradient(
+        145deg,
+        rgba(20,25,62,.88),
+        rgba(9,11,32,.92)
+      );
+      border:1px solid var(--line);
+      backdrop-filter:blur(20px);
+      border-radius:30px;
+      padding:52px 30px 42px;
+      text-align:center;
+      box-shadow:
+        0 30px 70px rgba(0,0,0,.55),
+        inset 0 1px 0 rgba(255,255,255,.05);
+      animation:fadeUp .8s cubic-bezier(.2,.8,.2,1);
+    }
+
+    /* Logo area */
+    .signal{
+      position:relative;
+      width:132px;
+      height:132px;
+      margin:0 auto 30px;
+    }
+
+    .signal .ring{
+      position:absolute;
+      inset:0;
+      border-radius:50%;
+      background:conic-gradient(
+        from 0deg,
+        var(--blue),
+        var(--purple),
+        var(--pink),
+        var(--cyan),
+        transparent 72%
+      );
+      animation:spin 7s linear infinite;
+      -webkit-mask:radial-gradient(
+        farthest-side,
+        transparent calc(100% - 4px),
+        #000 calc(100% - 3px)
+      );
+      mask:radial-gradient(
+        farthest-side,
+        transparent calc(100% - 4px),
+        #000 calc(100% - 3px)
+      );
+    }
+
+    .signal .pulse{
+      position:absolute;
+      inset:-10px;
+      border-radius:50%;
+      border:1px solid rgba(139,92,246,.5);
+      animation:pulseRing 2.6s ease-out infinite;
+    }
+
+    /* K Logo */
+    .kabir-logo{
+      position:absolute;
+      inset:10px;
+      border-radius:50%;
+      background:
+        linear-gradient(145deg,#121a48,#0c0d28);
+      border:2px solid rgba(56,189,248,.4);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      box-shadow:
+        inset 0 0 30px rgba(139,92,246,.22),
+        0 0 35px rgba(56,189,248,.16);
+    }
+
+    .kabir-logo::before{
+      content:"K";
+      font-family:'Fraunces',serif;
+      font-size:58px;
+      font-weight:800;
+      font-style:italic;
+      background:linear-gradient(
+        135deg,
+        #ffffff,
+        var(--blue),
+        var(--purple)
+      );
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
+    }
+
+    .kabir-logo::after{
+      content:"KABIR";
+      position:absolute;
+      bottom:22px;
+      font-size:8px;
+      font-weight:800;
+      letter-spacing:3px;
+      color:var(--cyan);
+    }
+
+    .eyebrow{
+      display:block;
+      font-size:10px;
+      font-weight:700;
+      letter-spacing:3px;
+      text-transform:uppercase;
+      color:var(--cyan);
+      margin-bottom:7px;
+    }
+
+    h1{
+      font-family:'Fraunces',serif;
+      font-size:34px;
+      font-weight:700;
+      letter-spacing:-.7px;
+      line-height:1.15;
+      background:linear-gradient(
+        135deg,
+        #ffffff 10%,
+        var(--blue) 50%,
+        var(--purple) 100%
+      );
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
+      margin-bottom:12px;
+    }
+
+    h1 em{
+      font-style:italic;
+      font-weight:600;
+    }
+
+    .tagline{
+      color:var(--ink-muted);
+      font-size:13px;
+      font-weight:500;
+      letter-spacing:.3px;
+      margin-bottom:28px;
+    }
+
+    .top-badge{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      font-family:'Fraunces',serif;
+      font-size:12px;
+      font-weight:600;
+      font-style:italic;
+      color:#c4b5fd;
+      background:linear-gradient(
+        135deg,
+        rgba(139,92,246,.12),
+        rgba(56,189,248,.08)
+      );
+      border:1px solid rgba(139,92,246,.35);
+      padding:9px 17px;
+      border-radius:999px;
+      margin-bottom:34px;
+    }
+
+    .top-badge i{
+      color:var(--cyan);
+      font-size:12px;
+    }
+
+    /* Join button */
+    .join-wrap{
+      position:relative;
+      border-radius:22px;
+      padding:3px;
+      overflow:hidden;
+      box-shadow:
+        0 20px 50px rgba(139,92,246,.35),
+        0 12px 30px rgba(56,189,248,.22);
+      animation:ctaGlow 2.5s ease-in-out infinite;
+      transition:.2s ease;
+    }
+
+    .join-wrap::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:linear-gradient(
+        100deg,
+        #67e8f9,
+        #38bdf8,
+        #8b5cf6,
+        #a855f7,
+        #ec4899
+      );
+    }
+
+    .join-wrap:hover{
+      transform:translateY(-3px);
+    }
+
+    .join-btn{
+      position:relative;
+      z-index:1;
+      width:100%;
+      display:flex;
+      align-items:center;
+      gap:14px;
+      text-decoration:none;
+      background:linear-gradient(
+        100deg,
+        #67e8f9,
+        #38bdf8,
+        #8b5cf6,
+        #a855f7,
+        #ec4899,
+        #67e8f9
+      );
+      background-size:300% 100%;
+      animation:gradientMove 6s ease infinite;
+      padding:17px 18px;
+      border-radius:19px;
+      overflow:hidden;
+    }
+
+    .join-btn::after{
+      content:"";
+      position:absolute;
+      top:0;
+      left:-60%;
+      width:40%;
+      height:100%;
+      background:linear-gradient(
+        115deg,
+        transparent,
+        rgba(255,255,255,.6),
+        transparent
+      );
+      animation:shine 2.8s ease-in-out infinite;
+    }
+
+    .icon-circle{
+      position:relative;
+      z-index:2;
+      flex-shrink:0;
+      width:44px;
+      height:44px;
+      border-radius:50%;
+      background:#090b22;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      box-shadow:0 0 0 2px rgba(255,255,255,.35);
+    }
+
+    .icon-circle i{
+      font-size:20px;
+      color:var(--cyan);
+    }
+
+    .btn-text{
+      position:relative;
+      z-index:2;
+      flex:1;
+      text-align:left;
+    }
+
+    .label{
+      display:block;
+      font-size:10px;
+      font-weight:800;
+      letter-spacing:1.2px;
+      text-transform:uppercase;
+      color:rgba(9,11,34,.65);
+    }
+
+    .title{
+      font-family:'Fraunces',serif;
+      font-size:20px;
+      font-weight:700;
+      font-style:italic;
+      color:#090b22;
+    }
+
+    .arrow{
+      position:relative;
+      z-index:2;
+      flex-shrink:0;
+      font-size:16px;
+      color:#090b22;
+    }
+
+    footer{
+      position:fixed;
+      bottom:14px;
+      width:100%;
+      text-align:center;
+      font-size:11px;
+      color:rgba(255,255,255,.22);
+      z-index:5;
+    }
+
+    @keyframes spin{
+      to{transform:rotate(360deg);}
+    }
+
+    @keyframes gradientMove{
+      0%{background-position:0% 50%;}
+      50%{background-position:100% 50%;}
+      100%{background-position:0% 50%;}
+    }
+
+    @keyframes ctaGlow{
+      0%,100%{
+        box-shadow:
+          0 20px 50px rgba(139,92,246,.35),
+          0 12px 30px rgba(56,189,248,.22);
+      }
+
+      50%{
+        box-shadow:
+          0 22px 60px rgba(168,85,247,.55),
+          0 15px 40px rgba(56,189,248,.38);
+      }
+    }
+
+    @keyframes shine{
+      0%{left:-60%;}
+      55%,100%{left:130%;}
+    }
+
+    @keyframes pulseRing{
+      0%{
+        transform:scale(.9);
+        opacity:.65;
+      }
+
+      100%{
+        transform:scale(1.35);
+        opacity:0;
+      }
+    }
+
+    @keyframes fadeUp{
+      from{
+        opacity:0;
+        transform:translateY(18px);
+      }
+
+      to{
+        opacity:1;
+        transform:translateY(0);
+      }
+    }
+
+    @media(max-width:400px){
+
+      .card{
+        padding:44px 22px 36px;
+      }
+
+      h1{
+        font-size:28px;
+      }
+
+    }
+
+  </style></head><body>  <div id="field">
+    <div class="glow"></div>
+  </div>  <div class="grain"></div>  <main class="main"><div class="card">
+
+  <div class="signal">
+    <div class="pulse"></div>
+    <div class="ring"></div>
+
+    <div class="kabir-logo"></div>
+  </div>
+
+  <span class="eyebrow">Official Community</span>
+
+  <h1>𝗫𝗘𝗡𝗢𝗡 𝗫  <em>𝗧𝗢𝗢𝗟</em></h1>
+
+  <div class="tagline">
+    Community &amp; Latest Updates
+  </div>
+
+  <div class="top-badge">
+    <i class="fa-solid fa-crown"></i>
+    Exclusive Discussion &amp; Updates
+  </div>
+
+  <div class="join-wrap">
+
+    <a
+      href="https://t.me/+VrlHgcd-h0g5MjFl"
+      class="join-btn"
+      id="joinBtn"
+      target="_blank"
+      rel="noopener"
+    >
+
+      <span class="icon-circle">
+        <i class="fab fa-telegram-plane"></i>
+      </span>
+
+      <span class="btn-text">
+        <span class="label">Telegram Community</span>
+        <span class="title">Join Now</span>
+      </span>
+
+      <i class="fa-solid fa-chevron-right arrow"></i>
+
+    </a>
+
+  </div>
+
+</div>
+
+  </main>  <footer></footer></body>
+</html>
