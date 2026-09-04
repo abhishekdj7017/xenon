@@ -3,8 +3,8 @@ export default async function handler(req, res) {
     return res.status(405).json({ error: "Method not allowed" });
   }
 
-  const PIXEL_ID = "1366618005528841";
-  const ACCESS_TOKEN = EAANbFLf6MnsBScCaRgn1Umg5TOiVtEF3UfEkQwpF6BI9t0QhPIoZBIadzo2mz7hUFsr6mOUZC573izZAItENjfNOIFyWSHFObbCekbxHO0c7weBhPDVK2epZBeVe3K8Jv9d1cJmxAnD2srg1qSr6yTIC9UFbLyYYC12C7Xm6xPJiOJcN3XZB1y81JELYkZCGJeaQZDZD;
+  const PIXEL_ID = "1809532570042392";
+  const ACCESS_TOKEN = EAANbFLf6MnsBSVvNywZCZB7A7pndeBDqInPHeLFKpZCULFIZB7QAI4NeVKk19LsclhXUQfaS7ve6ZA8SmITYTX0cr8CKMECrVomrj4DdOZC6iyp5cPlo2NuZBrfppxADBsOQwALZAQkCchjfdp1xPkROkfuL3tYPoXZCgFbWpB2QtBCuVGT2EmQD8fokf3RW4uxfZCNwZDZD;
 
   try {
     const response = await fetch(
